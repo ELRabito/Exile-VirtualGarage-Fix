@@ -2,7 +2,7 @@
 
 What it does: This fixes a couple of problems with the serverside Virtual Garage scripts.
 - Just realised the bug is still exists in the current server files and there is no public fix on the Exile Discord listed, nor is there a thread in the Unofficial forum.
-- I optimised it and also included the "Nickname problem" bug fixes from @Crito-VanaheimServers.
+- I optimised it slightly and also included the "Nickname problem" bug fixes from @Crito-VanaheimServers.
 
 # Installation
 1. Download ExileServer_object_vehicle_network_storeVehicleRequest & ExileServer_object_vehicle_network_retrieveVehicleRequest and copy them over the orginal files in your @ExileServer\addons\exile_server.pbo (Unpack -pbo -> Replace both files -> Repack exile_server.pbo).
