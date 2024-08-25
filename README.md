@@ -17,14 +17,14 @@ What it does: This fixes a couple of problems with the serverside Virtual Garage
 3. To fix the issue with Nicknames for the Virtual Garage you also need to change this in your @ExileServer\sql_custom\exile.ini (Search for: confirmVehicleOwnership ).
 # For extDB2
     [confirmVehicleOwnership]
-    SQL1_1 = SELECT id,territory_id FROM vehicle WHERE nickname = ? 
+    SQL1_1 = SELECT id FROM vehicle WHERE nickname = ? AND territory_id = ?
     Number of Inputs = 2
     SQL1_INPUTS = 1, 2
     OUTPUT = 1
 
 # For extDB3
     [confirmVehicleOwnership]
-    SQL1_1 = SELECT id,territory_id FROM vehicle WHERE nickname = ? 
+    SQL1_1 = SELECT id FROM vehicle WHERE nickname = ? AND territory_id = ?
     SQL1_INPUTS = 1, 2
     OUTPUT = 1
 
