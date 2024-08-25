@@ -49,8 +49,7 @@ try
 		};
 		case 1:
 		{
-			private _nickNameTemp = _nickName call ExileClient_util_string_trim;
-			_nickName = ExileVGNameTrimed;
+			private _nickName = _nickName call ExileClient_util_string_trim;
 			private _nickNameLength = count _nickName;
 			if (_nickNameLength isEqualTo 0) then 
 			{
