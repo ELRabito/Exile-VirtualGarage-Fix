@@ -8,6 +8,7 @@
  * This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. 
  * To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
  */
+private _output = "";
 isNil {
 
 	private _input = _this;
@@ -15,7 +16,6 @@ isNil {
 	private _inputLength = count _inputLetters;
 	private _leftStartPosition = 0;
 	private _rightEndPosition = _inputLength;
-	private _output = "";
 	private _whitespaceCharacters = [9, 10, 13, 32]; 
 	for "_i" from 0 to _inputLength do
 	{
@@ -41,5 +41,5 @@ isNil {
 	{
 		_output = _input;
 	};
-	ExileVGNameTrimed = _output;
 };
+_output
