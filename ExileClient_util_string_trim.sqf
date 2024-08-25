@@ -41,5 +41,5 @@ isNil {
 	{
 		_output = _input;
 	};
-	ExileVGNameToTrimed = _output;
+	ExileVGNameTrimed = _output;
 };
