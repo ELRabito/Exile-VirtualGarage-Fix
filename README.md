@@ -9,6 +9,11 @@ What it does: This fixes a couple of problems with the serverside Virtual Garage
 1. Download ExileServer_object_vehicle_network_storeVehicleRequest & ExileServer_object_vehicle_network_retrieveVehicleRequest and copy them over the orginal files in your @ExileServer\addons\exile_server.pbo (Unpack -pbo -> Replace both files -> Repack exile_server.pbo).
 - If you did any custom additions to these files you obviously need to merge them.
 
+3. Download ExileClient_util_string_trim & ExileClient_gui_virtualGarageDialog_event_onConfirmButtonClicked and put them to your missionfile and add the CfgExileCustomCode for both.
+	
+		ExileClient_util_string_trim = "Overrides\ExileClient_util_string_trim.sqf";
+		ExileClient_gui_virtualGarageDialog_event_onConfirmButtonClicked = "Overrides\ExileClient_gui_virtualGarageDialog_event_onConfirmButtonClicked.sqf";
+
 2. Two fix the issue with Nicknames for the Virtual Garage you also need to change this in your @ExileServer\sql_custom\exile.ini (Search for: confirmVehicleOwnership ).
 # For extDB2
     [confirmVehicleOwnership]
@@ -23,7 +28,4 @@ What it does: This fixes a couple of problems with the serverside Virtual Garage
     SQL1_INPUTS = 1, 2
     OUTPUT = 1
 
-3. Download ExileClient_util_string_trim & ExileClient_gui_virtualGarageDialog_event_onConfirmButtonClicked and put them to your missionfile and add the CfgExileCustomCode for both.
 
-	ExileClient_util_string_trim = "Overrides\ExileClient_util_string_trim.sqf";
-	ExileClient_gui_virtualGarageDialog_event_onConfirmButtonClicked = "Overrides\ExileClient_gui_virtualGarageDialog_event_onConfirmButtonClicked.sqf";
