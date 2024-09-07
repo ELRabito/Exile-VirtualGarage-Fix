@@ -1,7 +1,7 @@
 # Exile-VirtualGarage-Fix
 
-What it does: This fixes a couple of problems with the serverside Virtual Garage scripts.
-- Just realised the bug is still exists in the current server files and there is no public fix on the Exile Discord listed, nor is there a thread in the Unofficial forum.
+What it does: This fixes a couple of problems with the Virtual Garage scripts.
+- Just realised the bug is still exists in the current files and there is no public fix on the Exile Discord listed, nor is there a thread in the Unofficial forum.
 - I optimised it slightly and also included the "Nickname problem" bug fixes from @Crito-VanaheimServers.
 - Also fixes the client side trim string error message when you put a vehicle into the VG (was due to scheduled execution).
 
